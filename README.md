@@ -2,8 +2,7 @@
     
     # Install with Pip
     pip install -r requirements.txt
-
-    ```
+    
 1. Detection & Capturing:
     ```bash
     # Face Detection:
