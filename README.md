@@ -1,8 +1,4 @@
-1. Install:
-    
-    ```bash
-    # Clone Repo:
-    git clone https://github.com/pewdspie24/FaceNet-Infer.git
+1. Set up enviroment (Optional):
     
     # Install with Pip
     pip install -r requirements.txt
