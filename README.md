@@ -1,8 +1,7 @@
-1. Set up enviroment (Optional):
-    
-    # Install with Pip
+1. Set up enviroment (You shoudld set up virtual enviroment):
+    ```
     pip install -r requirements.txt
-    
+    ```
 1. Detection & Capturing:
     ```bash
     # Face Detection:
