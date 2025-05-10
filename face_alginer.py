@@ -65,7 +65,7 @@ def align(img, landmarks):
             break
 
 if __name__ == "__main__":
-    img = cv2.imread('data/test_images/Quang/2021-07-03-14-38-5828.jpg')
+    img = cv2.imread('data/test_images/Quang/2025-05-09-10-46-169.jpg')
     device =  torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     mtcnn = MTCNN(device=device)
     boxes, _, landmarks = mtcnn.detect(img, landmarks=True)

@@ -25,7 +25,7 @@ def load_faceslist():
     names = np.load(DATA_PATH+'/usernames.npy')
     return embeds, names
 
-def inference(model, face, local_embeds, threshold = 3):
+def inference(model, face, local_embeds, threshold = 1):
     #local: [n,512] voi n la so nguoi trong faceslist
     embeds = []
     # print(trans(face).unsqueeze(0).shape)
@@ -76,6 +76,7 @@ if __name__ == "__main__":
     ).to(device)
     model.eval()
 
+    # print(model)
     mtcnn = MTCNN(thresholds= [0.7, 0.7, 0.8] ,keep_all=True, device = device)
 
     cap = cv2.VideoCapture(0)
